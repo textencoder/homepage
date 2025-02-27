@@ -11,6 +11,7 @@ body {
   flex-direction: column;
   justify-items: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 header {
@@ -85,7 +86,79 @@ header {
 }
 
 main {
-  background: green;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  
+
+  h2 {
+    font-family: 'Playfair Display';
+    font-weight: 400;
+    padding: 10px 30px;
+  }
+
+  section {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    padding: 0 30px;
+    gap: 30px;
+  }
+}
+
+.card {
+  background: white;
+  aspect-ratio: 7/8;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
+  border: 1px solid rgb(200, 200, 200);
+  cursor: pointer;
+}
+
+.project-image {
+  width: 100%;
+  height: 60%;
+  display: grid;
+  place-items: center;
+
+  p {
+    font-family: 'Playfair Display';
+    font-size: 2rem;
+    text-align: center;
+    color: white;
+    padding: 40px;
+  }
+}
+
+.project-description {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+  grid-template-rows: 1fr 2fr;
+  gap: 10px;
+  padding: 15px;
+  
+  svg {
+    width: 18px;
+  }
+}
+
+.project-name {
+  grid-area: 1 / 1 / 2 / 2;
+  font-family: 'Playfair Display';
+}
+
+.icons {
+  grid-area: 1 / 2 / 2 / 2;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+
+.description {
+  grid-area: 2 / 1 / 3 / 3;
+  
+  color: grey;
+  font-size: 0.8rem;
+  font-family: 'Roboto', sans-serif;
 }
 
 footer {
