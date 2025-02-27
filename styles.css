@@ -89,7 +89,7 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  
+  padding: 30px;
 
   h2 {
     font-family: 'Playfair Display';
@@ -100,7 +100,7 @@ main {
   section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
     padding: 0 30px;
     gap: 30px;
   }
@@ -162,5 +162,56 @@ main {
 }
 
 footer {
-  background: blue;
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1.25fr;
+  place-items: center;
+  background-color: lightslategrey;
+  font-family: "Roboto";
+  color: white;
+
+  .contact {
+    display: grid;
+    grid-template-rows: repeat(5, 1fr);
+    align-items: center;
+    padding: 30px;
+    gap: 5px;
+    font-size: 0.9rem;
+  }
+
+  h2 {
+    font-family: "Playfair Display";
+    font-weight: 400;
+    font-size: 1.75rem;
+  }
+
+  .contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .contact-info p {
+    display: flex;
+    align-items: center;
+  }
+
+  p svg {
+    fill: white;
+    width: 21px;
+    margin-right: 5px;
+  }
+
+  span {
+    display: flex;
+    gap: 10px;
+  }
+
+  svg {
+    width: 24px;
+  }
+
+  img {
+    width: 90%;
+  }
 }
