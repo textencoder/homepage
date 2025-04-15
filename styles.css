@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
 }
 
 body {
@@ -15,13 +16,14 @@ body {
 }
 
 header {
-  height: 90%;
+  height: 100%;
   width: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
-  background-color: lightslategrey;
+  background-color: #0891b3;
   z-index: 0;
+  padding: 30px 60px;
 }
 
 header::after {
@@ -38,7 +40,7 @@ header::after {
 
 .image {
   aspect-ratio: 7/8;
-  height: 85%;
+  width: 60%;
   position: relative;
   display: grid;
   place-items: center;
@@ -59,17 +61,17 @@ header::after {
     text-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
     font-family: 'Playfair Display', serif;
     font-weight: 400;
-    font-size: 2.5rem;
+    font-size: 3rem;
   }
 }
 
 .about-me {
-  width: 45%;
-  height: 62.5%;
+  width: 100%;
+  height: 80%;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding: 20px;
+  padding: 25px 30px 25px 20px;
   box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.15);
   background-color: white;
   z-index: 1;
@@ -77,13 +79,14 @@ header::after {
   h2 {
     font-family: 'Playfair Display', serif;
     font-weight: 400;
+    font-size: 2rem;
   }
 
   p {
-    font-family: 'Roboto', serif;
+    font-family: 'Roboto', sans-serif;
     font-weight: 400;
     line-height: 1.5;
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: grey;
     height: 65%;
   }
@@ -91,10 +94,10 @@ header::after {
   div {
     display: flex;
     justify-content: flex-end;
-    gap: 15px;
+    gap: 20px;
 
     svg {
-        width: 21px;
+        width: 28px;
     }
   }
 }
@@ -103,20 +106,21 @@ main {
   width: 100%;
   display: flex;
   flex-direction: column;
-  padding: 30px;
+  padding: 30px 60px;
   z-index: 1;
 
   h2 {
-    font-family: 'Playfair Display';
+    font-family: 'Playfair Display', serif;
     font-weight: 400;
-    padding: 10px 30px;
+    padding-bottom: 10px;
+    font-size: 2rem;
   }
 
   section {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    padding: 0 30px;
+    
     gap: 30px;
   }
 }
@@ -136,7 +140,7 @@ main {
   place-items: center;
 
   p {
-    font-family: 'Playfair Display';
+    font-family: 'Playfair Display', serif;
     font-size: 2rem;
     text-align: center;
     color: white;
@@ -158,7 +162,7 @@ main {
 
 .project-name {
   grid-area: 1 / 1 / 2 / 2;
-  font-family: 'Playfair Display';
+  font-family: 'Playfair Display', serif;
 }
 
 .icons {
@@ -182,7 +186,7 @@ footer {
   grid-template-columns: 1fr 1.25fr;
   place-items: center;
   background-color: lightslategrey;
-  font-family: "Roboto";
+  font-family: "Roboto", sans-serif;
   color: white;
 
   .contact {
@@ -195,7 +199,7 @@ footer {
   }
 
   h2 {
-    font-family: "Playfair Display";
+    font-family: "Playfair Display", serif;
     font-weight: 400;
     font-size: 1.75rem;
   }
